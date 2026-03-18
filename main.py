@@ -16,6 +16,10 @@ import logging
 import os
 import sys
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from amazon_scraper import scrape_products
 from claude_analyzer import analyze_products
 from slack_reporter import send_report, send_csv_report
